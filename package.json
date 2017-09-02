@@ -1,0 +1,16 @@
+{
+  "name": "jwt-mock-auth-provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Teemu Heikkilä <teemu@emblica.fi>",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^7.4.3",
+    "restify": "^5.2.0"
+  }
+}

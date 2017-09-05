@@ -3,11 +3,18 @@
 const jwt = require('jsonwebtoken')
 const restify = require('restify')
 
-
+const corsMiddleware = require('restify-cors-middleware')
 
 
 
 var server = restify.createServer();
+
+const cors = corsMiddleware({
+  origins: ['*']
+})
+
+server.pre(cors.preflight)
+server.use(cors.actual)
 
 server.use(restify.plugins.gzipResponse());
 server.use(restify.plugins.bodyParser());

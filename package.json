@@ -10,7 +10,9 @@
   "author": "Teemu Heikkilä <teemu@emblica.fi>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.16.2",
     "jsonwebtoken": "^7.4.3",
-    "restify": "^5.2.0"
+    "restify": "^5.2.0",
+    "restify-cors-middleware": "^1.0.1"
   }
 }
